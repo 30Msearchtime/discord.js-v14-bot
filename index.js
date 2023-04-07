@@ -33,6 +33,8 @@ const client = new Client({
 
 module.exports = client;
 
+require('dotenv').config();
+
 fs.readdir("./events", (_err, files) => {
 files.forEach((file) => {
 if (!file.endsWith(".js")) return;
