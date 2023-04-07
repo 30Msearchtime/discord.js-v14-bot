@@ -5,10 +5,10 @@ if(!interaction.guild) return;
 if(interaction.user.bot) return;
 
 if (interaction.type === InteractionType.ApplicationCommand) {
-fs.readdir("./commands", (err, files) => {
+fs.readdir("./slash", (err, files) => {
 if (err) throw err;
 files.forEach(async (f) => {
-let props = require(`../commands/${f}`);
+let props = require(`../slash/${f}`);
 if (interaction.commandName.toLowerCase() === props.name.toLowerCase()) {
 try {
 return props.run(client, interaction);
