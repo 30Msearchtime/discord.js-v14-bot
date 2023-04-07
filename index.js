@@ -45,17 +45,17 @@ delete require.cache[require.resolve(`./events/${file}`)];
 });
 
 client.commands = [];
-fs.readdir("./commands", (err, files) => {
+fs.readdir("./slash", (err, files) => {
 if (err) throw err;
 files.forEach(async (f) => {
 try {
-let props = require(`./commands/${f}`);
+let props = require(`./slash/${f}`);
 client.commands.push({
 name: props.name,
 description: props.description,
 options: props.options
 });
-console.log(`[Command]   ✅  Loaded: ${props.name}`);
+console.log(`[Slash Command]   ✅  Loaded: ${props.name}`);
 } catch (err) {
 console.log(err);
 }
