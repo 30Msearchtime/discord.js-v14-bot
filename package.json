@@ -11,9 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
     "fs": "^0.0.1-security"
   },
   "engines": {
-    "node": "16.9.1"
+    "node": "16.9"
   }
 }
