@@ -23,3 +23,9 @@ npm install
 - Type `npm run start` to start the bot
 
 <br>
+
+## Contact
+
+- [30Msearchtime](https://github.com/30Msearchtime)
+- [Discord](https://discord.com/users/426081591832346624)
+- toolbotsystem@gmail.com
